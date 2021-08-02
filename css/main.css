@@ -1,0 +1,196 @@
+
+/* resets */
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+/* 
+ * Completely resets form items
+ * ----------------------------
+ * Super hard reset that removes all borders
+ * and radiuses of all form items (including
+ * checkboxes and radios)
+ */
+
+ input,
+ textarea,
+ button {
+   border: 0;
+   border-radius: 0;
+   background-color: transparent;
+   font-size: inherit;
+   font-family: inherit;
+   font-weight: inherit;
+   outline: none;
+   appearance: none;
+ }
+ 
+ input:hover,
+ input:active,
+ input:focus,
+ textarea:hover,
+ textarea:active,
+ textarea:focus,
+ button:hover,
+ button:active,
+ button:focus {
+   outline: none;
+ }
+ 
+ :root {
+   font-family: Helvetica, Arial, sans-serif;
+ }
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+
+/* global styles */
+
+body {
+ background-color: #3b4664;
+ height: 100vh;
+}
+
+.calculator{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    
+}
+
+header {
+    box-sizing: border-box;
+    padding: 20px 0;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav .header {
+    flex: 1;
+    color: #ffffff;
+}
+
+.header_text{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.header_theme{
+    font-size: 12px;
+    text-align: right;
+    font-weight: bolder;
+}
+.screen {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 0;
+    background-color: transparent;
+    background-color: #181f32;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: right;
+    font-weight: bolder;
+    
+}
+
+.calculator_keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #252d44;
+}
+
+.calculator_keys  .num-pad, .calculator_keys .operator, .calculator_keys .decimal {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-weight: bolder;
+}
+
+.calculator_keys .delete{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #647299;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+
+.reset{
+    background-color: #647299;
+    font-weight: bolder;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.result {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    height: 50px;
+    background-color: #d13f30;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reset button, .delete button, .result button {
+    color: #ffffff;
+}
+
+/* media queries */
+
+/* When the browser is at least 600px and above */
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    .main-calc{
+        width: 80%;
+    }
+  }
+  
