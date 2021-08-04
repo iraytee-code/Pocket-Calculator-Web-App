@@ -86,6 +86,6 @@ I will take on more complex projects involving dom manipulation and functions in
 ## Author
 
 - Frontend Mentor - (https://www.frontendmentor.io/profile/iraytee-code)
-- Twitter - [@yourusername](https://www.twitter.com/EA_techofficial)
+- Twitter - (https://www.twitter.com/EA_techofficial)
 
 
