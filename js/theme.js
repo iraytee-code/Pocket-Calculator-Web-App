@@ -5,7 +5,5 @@ themeBody.addEventListener("change", (event) => {
 });
 
 
-const themeScreen = document.getElementById("screen");
-
 
 
