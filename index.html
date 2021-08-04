@@ -15,13 +15,21 @@
           <div class="header header_text">
             <h6>calc</h6>
           </div>
-          <div class="header header_theme">
+          <!-- <div class="header_text">
+            <p>Theme</p>
+          </div> -->
+          <div class="header_theme ">
             <!--theme changer-->
-            <p>THEME</p>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <div class="theme-1"></div>
+              <div class="theme-2"></div>
+              <div class="ball"></div>
+            </label>
           </div>
         </nav>
           <!--Display screen-->
-          <input type="text" class="screen" value="" disabled/>
+          <input type="text" id="screen" class="screen" value="" disabled/>
       </header>
        <div class="calculator_keys">
 
@@ -67,5 +75,6 @@
       Coded by <a href="https://github.com/iraytee-code">IRAYTEE</a>.
     </div>
 </body>
+<script src="./js/theme.js"></script>
 <script src="./js/index.js"></script>
 </html>
